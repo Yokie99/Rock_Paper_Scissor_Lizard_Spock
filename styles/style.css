@@ -1,0 +1,79 @@
+.homeBG {
+    background-image: url(../assets/space_Lizard.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+    
+
+}
+
+.roundsBG{
+    background-image: url(../assets/PRS_in_space.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.gameBG{
+    background-image: url(../assets/space.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.mainRowRounds{
+    width: 100vw;
+    padding-left: 40vw;
+}
+
+.header{
+    padding-top: 90px;
+    font-size: 80px;
+    color: white;
+
+
+}
+
+.menuSpacer{
+    height: 50vh;
+}
+
+.menuBtn{
+    width: 20vw !important;
+    
+    height: 10vh !important;
+    background-color: white;
+    color: black;
+    border-radius: 80px;
+    font-size: 50px;
+    text-decoration: none;
+    text-align: center;
+
+}
+.menuBtn:hover{
+    background-color: rgb(107, 107, 189);
+}
+
+.roundSpacer{
+    height: 20vh;
+}
+
+.roundRows{
+    height: 10vh;
+}
+
+.fill{
+    background-color: white;
+    height: 700px;
+    border: black solid 3px;
+}
+
+.scores{
+    color: white;
+}
+
