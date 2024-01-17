@@ -115,3 +115,7 @@
 .colHeight{
     height: 80vh;
 }
+
+.off{
+    display: none !important;
+}

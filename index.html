@@ -10,22 +10,23 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-<body class="homeBG">
+<body id="body" class="homeBG">
 
     <h1 class="text-center header">Rock, Paper, Scissor, Lizard, Spock</h1>
-    <div class="menuSpacer"></div>
+    
 
 
-<div class="row">
+<div id="homeDiv" class="row">
+<div class="menuSpacer"></div>
 <div class="col p-0 d-flex justify-content-center">
-    <a id="OneVOneBtn" class="menuBtn" href="./pages/Rounds.html" role="button">1V1</a>
+    <button id="OneVOneBtn" class="menuBtn" href="./pages/Rounds.html" role="button">1V1</button>
     
     </div>
     <div class="col p-0 d-flex justify-content-center">
-        <a id="cpuBtn" class="menuBtn" href="./pages/Rounds.html" role="button">VS CPU</a>
+        <button id="cpuBtn" class="menuBtn" href="./pages/Rounds.html" role="button">VS CPU</button>
     </div>
     <div class="col p-0 d-flex justify-content-center">
-        <a id="rulesBtn" class="menuBtn" href="./pages/Rounds.html" role="button">Rules</a>
+        <button id="rulesBtn" class="menuBtn" href="./pages/Rounds.html" role="button">Rules</button>
     </div>
 
 
@@ -33,6 +34,78 @@
 
 
 
+
+<div id="roundsDiv" class="off">
+<div class="roundSpacer"></div>
+
+
+<div class="iconContainer">
+    <button id="BoOne" class="menuBtn " href="../pages/Gameplay.html" role="button">Best of 1</button>
+    <div class="roundRows"></div>
+    <button id="BoFive" class="menuBtn" href="../pages/Gameplay.html" role="button">Best of 5</button>
+    <div class="roundRows"></div>
+    <button id="BoSeven" class="menuBtn" href="../pages/Gameplay.html" role="button">Best of 7</button>
+    <div class="roundRows"></div>
+</div>
+
+
+</div>
+
+
+
+<div id="gameplayDiv" class="off">
+    <div class="row m-0">
+        <div class="col scores text-center p-0">
+            <h2>Player 1</h2>
+            
+            <h2 id="p1Score">Score 0/0</h2>
+
+        </div>
+        <div class="col iconContainer">
+            <img id="rockP1" class="icon" src="../assets/rock.png" alt="">
+            <img id="paperP1" class="icon" src="../assets/paper.png" alt="">
+            <img id="scissorsP1" class="icon" src="../assets/scissors.png" alt="">
+            <img id="lizardP1" class="icon" src="../assets/lizard.png" alt="">
+            <img id="spockP1" class="icon" src="../assets/spock.png" alt="">
+
+
+
+        </div>
+        <div class="col-4 ">
+            <div class="goTopSpacer"></div>
+            <div class="d-flex justify-content-center pb-5">
+
+                <button id="goBtn" class="GoBtn " role="button">Go!</button>
+            </div>
+            <div class="goMidSpacer"></div>
+            <div class="d-flex justify-content-between px-4 pt-5">
+                <button id="homeBtn" href="../index.html" class="gameBtn " role="button">Home</button>
+                <button id="gameplayRulesBtn" class="gameBtn " role="button">Rules</button>
+            </div>
+
+
+
+
+
+        </div>
+        <div class="col iconContainer">
+            <img id="rockP2" class="icon" src="../assets/rock.png" alt="">
+            <img id="paperP2" class="icon" src="../assets/paper.png" alt="">
+            <img id="scissorsP2" class="icon" src="../assets/scissors.png" alt="">
+            <img id="lizardP2" class="icon" src="../assets/lizard.png" alt="">
+            <img id="spockP2" class="icon" src="../assets/spock.png" alt="">
+
+        </div>
+        <div class="col scores text-center p-0">
+            <h2>Player 2</h2>
+            <h2 id="p2Score">Score 0/0</h2>
+
+        </div>
+    </div>
+
+
+
+</div>
     
 
 
