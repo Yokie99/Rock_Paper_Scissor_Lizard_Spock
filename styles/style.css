@@ -1,79 +1,121 @@
 .homeBG {
-    background-image: url(../assets/space_Lizard.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 100vw;
-    height: 100vh;
-    
-
+  background-image: url(../assets/space_Lizard.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
-.roundsBG{
-    background-image: url(../assets/PRS_in_space.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 100vw;
-    height: 100vh;
-
+.roundsBG {
+  background-image: url(../assets/PRS_in_space.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
-.gameBG{
-    background-image: url(../assets/space.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 100vw;
-    height: 100vh;
-
+.gameBG {
+  background-image: url(../assets/space.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100vw;
+  
 }
 
-.mainRowRounds{
-    width: 100vw;
-    padding-left: 40vw;
+.mainRowRounds {
+  width: 100vw;
+  padding-left: 40vw;
 }
 
-.header{
-    padding-top: 90px;
-    font-size: 80px;
-    color: white;
-
-
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 80px;
+  color: white;
 }
 
-.menuSpacer{
-    height: 50vh;
+.menuSpacer {
+  height: 50vh;
 }
 
-.menuBtn{
-    width: 20vw !important;
-    
-    height: 10vh !important;
-    background-color: white;
-    color: black;
-    border-radius: 80px;
-    font-size: 50px;
-    text-decoration: none;
-    text-align: center;
+.menuBtn {
+  width: 20vw !important;
 
+  height: 10vh !important;
+  background-color: white;
+  color: black;
+  border-radius: 80px;
+  font-size: 50px;
+  text-decoration: none;
+  text-align: center;
 }
-.menuBtn:hover{
-    background-color: rgb(107, 107, 189);
-}
-
-.roundSpacer{
-    height: 20vh;
+.menuBtn:hover {
+  background-color: rgb(107, 107, 189);
 }
 
-.roundRows{
-    height: 10vh;
+.roundSpacer {
+  height: 20vh;
 }
 
-.fill{
-    background-color: white;
-    height: 700px;
-    border: black solid 3px;
+.roundRows {
+  height: 10vh;
 }
 
-.scores{
-    color: white;
+.fill {
+  background-color: white;
+  height: 700px;
+  border: black solid 3px;
 }
 
+.scores {
+  color: white;
+}
+
+.icon {
+  width: 10vw;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.GoBtn {
+  width: 90%;
+  height: 25vh !important;
+  background-color: black;
+  color: red;
+  border-radius: 80px;
+  font-size: 90px;
+  text-decoration: none;
+  text-align: center;
+}
+.GoBtn:hover {
+  background-color: rgb(107, 107, 189);
+}
+
+.gameBtn {
+  width: 40%;
+  height: 10vh;
+  background-color: white;
+  color: black;
+  border-radius: 80px;
+  font-size: 35px;
+  text-decoration: none;
+  text-align: center;
+}
+.gameBtn:hover {
+  background-color: rgb(107, 107, 189);
+}
+
+.goTopSpacer {
+  height: 30%;
+}
+.goMidSpacer {
+  height: 15%;
+}
+
+.colHeight{
+    height: 80vh;
+}

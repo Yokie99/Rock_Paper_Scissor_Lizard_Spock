@@ -1,27 +1,62 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gameplay</title>
     <link rel="stylesheet" href="../styles/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  </head>
-  <body class="gameBG">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body class="gameBG">
 
 
     <h1 class="text-center header">Rock, Paper, Scissor, Lizard, Spock</h1>
 
-    <div class="row">
-        <div class="col scores">
+    <div class="row m-0">
+        <div class="col scores text-center p-0">
             <h2>Player 1</h2>
             <h2>Score 0/0</h2>
 
         </div>
-        <div class="col fill"></div>
-        <div class="col fill"></div>
-        <div class="col fill"></div>
-        <div class="col scores">
+        <div class="col iconContainer">
+            <img id="rockP1" class="icon" src="../assets/rock.png" alt="">
+            <img id="paperP1" class="icon" src="../assets/paper.png" alt="">
+            <img id="scissorsP1" class="icon" src="../assets/scissors.png" alt="">
+            <img id="lizardP1" class="icon" src="../assets/lizard.png" alt="">
+            <img id="spockP1" class="icon" src="../assets/spock.png" alt="">
+
+
+
+        </div>
+        <div class="col-4 ">
+            <div class="goTopSpacer"></div>
+            <div class="d-flex justify-content-center pb-5">
+
+                <button id="goBtn" class="GoBtn " role="button">Go!</button>
+            </div>
+            <div class="goMidSpacer"></div>
+            <div class="d-flex justify-content-between px-4 pt-5">
+                <a id="gameplayHomeBtn" href="../index.html" class="gameBtn " role="button">Home</a>
+                <button id="gameplayRulesBtn" class="gameBtn " role="button">Rules</button>
+            </div>
+
+
+
+
+
+        </div>
+        <div class="col iconContainer">
+            <img id="rockP2" class="icon" src="../assets/rock.png" alt="">
+            <img id="paperP2" class="icon" src="../assets/paper.png" alt="">
+            <img id="scissorsP2" class="icon" src="../assets/scissors.png" alt="">
+            <img id="lizardP2" class="icon" src="../assets/lizard.png" alt="">
+            <img id="spockP2" class="icon" src="../assets/spock.png" alt="">
+
+        </div>
+        <div class="col scores text-center p-0">
             <h2>Player 2</h2>
             <h2>Score 0/0</h2>
 
@@ -29,11 +64,14 @@
     </div>
 
 
-    
+
 
 
 
     <script src="../scripts/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
