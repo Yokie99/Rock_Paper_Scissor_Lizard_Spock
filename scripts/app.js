@@ -9,6 +9,9 @@ let p1Points = 0;
 let p2Points = 0;
 
 //player html tags
+let player1NameInput = document.getElementById("player1NameInput");
+let player2NameInput = document.getElementById("player2NameInput");
+
 let player1 = document.getElementById("player1");
 let player2 = document.getElementById("player2");
 
@@ -101,6 +104,7 @@ function resetGame() {
 
     player2.textContent = "Player 2"
     p2Column.classList.remove("off");
+    player2NameInput.classList.remove("off");
 }
 function resetReplay() {
     p1Choice = "";
@@ -122,12 +126,12 @@ function resetReplay() {
     p2Score.innerText = (`Score 0/${rounds}`);
 
     player2.textContent = "Player 2"
-    if(players === 1){
-      p2Column.classList.add("off");  
-      startCPU();
+    if (players === 1) {
+        p2Column.classList.add("off");
+        startCPU();
     }
 
-    
+
 }
 
 
@@ -136,6 +140,7 @@ function resetReplay() {
 OneVOneBtn.addEventListener("click", () => {
     players = 2;
     showRounds();
+    console.log(player1NameInput.value + player2NameInput.value);
 });
 cpuBtn.addEventListener("click", () => {
     players = 1;
@@ -147,21 +152,37 @@ BoOne.addEventListener("click", () => {
     rounds = 1;
     p1Score.innerText = (`Score 0/${rounds}`);
     p2Score.innerText = (`Score 0/${rounds}`);
+
     replay();
+    player1.textContent = player1NameInput.value;
+    if(players == 2){
+     player2.textContent = player2NameInput.value;   
+    }
+    
     showGameplay();
 });
 BoFive.addEventListener("click", () => {
     rounds = 3;
     p1Score.innerText = (`Score 0/${rounds}`);
     p2Score.innerText = (`Score 0/${rounds}`);
+
     replay();
+    player1.textContent = player1NameInput.value;
+    if(players == 2){
+        player2.textContent = player2NameInput.value;   
+       }
     showGameplay();
 });
 BoSeven.addEventListener("click", () => {
     rounds = 4;
     p1Score.innerText = (`Score 0/${rounds}`);
     p2Score.innerText = (`Score 0/${rounds}`);
+
     replay();
+    player1.textContent = player1NameInput.value;
+    if(players == 2){
+        player2.textContent = player2NameInput.value;   
+       }
     showGameplay();
 });
 
@@ -197,11 +218,11 @@ goBtn.addEventListener("click", () => {
         checkWin();
         p1Choice = "";
         p2Choice = "";
-        if(players === 1){
-        startCPU();
+        if (players === 1) {
+            startCPU();
+        }
     }
-    }
-    
+
     checkEnd();
 });
 result2.addEventListener("click", () => {
@@ -211,16 +232,16 @@ result2.addEventListener("click", () => {
 //Functions
 //Starts player VS CPU (game automatically starts in 1v1)
 const randomRPSLS = async () => {
-        const promise = await fetch(`https://rpslsapi.azurewebsites.net/RPSLS`);
-        const data =  await promise.text();
-        p2Choice = data.toLowerCase();
-        console.log(p2Choice);
-    }
-function startCPU(){
+    const promise = await fetch(`https://rpslsapi.azurewebsites.net/RPSLS`);
+    const data = await promise.text();
+    p2Choice = data.toLowerCase();
+    console.log(p2Choice);
+}
+function startCPU() {
     player2.textContent = "CPU"
     p2Column.classList.add("off");
     randomRPSLS();
-    console.log(p2Choice);
+    player2NameInput.classList.add("off");
 }
 
 
@@ -514,20 +535,20 @@ function checkWin() {
 
 function checkEnd() {
     if (p1Points === rounds) {
-        p1Status.innerText = "Player 1 Wins!";
+        p1Status.innerText = player1.textContent + " Wins!";
         p2Status.innerText = player2.textContent + " Loses!";
         goBtn.classList.add("off");
         result2.classList.remove("off");
     }
     else if (p2Points === rounds) {
-        p1Status.innerText = "Player 1 Loses!";
+        p1Status.innerText = player1.textContent + " Loses!";
         p2Status.innerText = player2.textContent + " Wins!";
         goBtn.classList.add("off");
         result2.classList.remove("off");
     }
 }
 
-function replay(){
+function replay() {
     result2.classList.add("off");
     resetReplay();
 

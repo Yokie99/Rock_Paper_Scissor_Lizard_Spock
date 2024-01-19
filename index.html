@@ -64,29 +64,67 @@
 
 
 
+
+
     <div id="homeDiv" class="row m-0">
         <div class="menuSpacer"></div>
-        <div class="col p-0 d-flex justify-content-center">
-            <button id="OneVOneBtn" class="menuBtn" href="./pages/Rounds.html" role="button">1V1</button>
+        <div class="container">
+            
+
+                </div>
+                <div class="col p-0 d-flex justify-content-center"></div>
+                <div class="col p-0 d-flex justify-content-center">
+                </div>
+
+
+
+
+            
+            <div class="row m-0">
+                <div class="col p-0 d-flex justify-content-center">
+                    <button id="OneVOneBtn" class="menuBtn" href="./pages/Rounds.html" role="button">1V1</button>
+
+                </div>
+                <div class="col p-0 d-flex justify-content-center">
+                    <button id="cpuBtn" class="menuBtn" href="./pages/Rounds.html" role="button">VS CPU</button>
+                </div>
+                <div class="col p-0 d-flex justify-content-center">
+                    <button id="rulesBtn" class="menuBtn" href="./pages/Rounds.html" role="button"
+                        data-bs-toggle="modal" data-bs-target="#RuleModal">Rules</button>
+                </div>
+            </div>
+
+
+
+
 
         </div>
-        <div class="col p-0 d-flex justify-content-center">
-            <button id="cpuBtn" class="menuBtn" href="./pages/Rounds.html" role="button">VS CPU</button>
-        </div>
-        <div class="col p-0 d-flex justify-content-center">
-            <button id="rulesBtn" class="menuBtn" href="./pages/Rounds.html" role="button" data-bs-toggle="modal"
-                data-bs-target="#RuleModal">Rules</button>
-        </div>
 
 
+    </div> <!-- homediv -->
 
-
-    </div>
 
     <div id="roundsDiv" class="off row m-0">
         <!-- <div class="roundSpacer"></div> -->
 
         <div class="menuSpacer"></div>
+
+        <div class="row justify-content-center">
+            <div class="col p-0 d-flex  justify-content-center">
+                <div>
+                    <div class="row">
+                    <input type="text" id="player1NameInput" placeholder="Enter user Player 1 Name"
+                        style="width: 20vw;">
+                </div>
+                <div class="row">
+                    <input type="text" id="player2NameInput" placeholder="Enter user Player 2 Name"
+                        style="width: 20vw;">
+                </div>
+                </div>
+                
+            <div style="height: 9vh;"></div>
+        </div>
+
         <div class="col p-0 d-flex justify-content-center">
             <button id="BoOne" class="menuBtn " href="../pages/Gameplay.html" role="button">Best of 1</button>
 
@@ -97,17 +135,13 @@
         <div class="col p-0 d-flex justify-content-center">
             <button id="BoSeven" class="menuBtn" href="../pages/Gameplay.html" role="button">Best of 7</button>
         </div>
-        <!-- <div class="iconContainer">
-            <button id="BoOne" class="menuBtn " href="../pages/Gameplay.html" role="button">Best of 1</button>
-            <div class="roundRows"></div>
-            <button id="BoFive" class="menuBtn" href="../pages/Gameplay.html" role="button">Best of 5</button>
-            <div class="roundRows"></div>
-            <button id="BoSeven" class="menuBtn" href="../pages/Gameplay.html" role="button">Best of 7</button>
-            <div class="roundRows"></div>
-        </div> -->
 
 
     </div>
+
+
+    <!-- rounds div -->
+    </div>  
 
 
 
@@ -143,7 +177,7 @@
                 <div class="d-flex justify-content-center pb-5">
                     <button id="result2" class="replayBtn off" role="button">Replay?</button>
                 </div>
-                
+
 
                 <div class="goMidSpacer"></div>
                 <div class="d-flex justify-content-between px-4 pt-5">
