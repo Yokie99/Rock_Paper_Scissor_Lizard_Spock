@@ -1,24 +1,24 @@
-.homeBG {
-  background-image: url(../assets/space_Lizard.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  /* width: 100vw; */
-  height: 100vh;
+@font-face {
+  font-family: Jeju;
+  src: url("../fonts/jejuhallasan/JejuHallasan-Regular.ttf");
 }
 
-.roundsBG {
-  background-image: url(../assets/PRS_in_space.jpg);
+.homeBG {
+  background-image: url(../assets/space_Lizard2.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   /* width: 100vw; */
   height: 100vh;
+  font-family: Jeju;
 }
+
 
 .gameBG {
   background-image: url(../assets/space.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  /* width: 100vw; */
+  height: 100vh;
+  font-family: Jeju;
   
 }
 
@@ -26,7 +26,7 @@
 .header {
   padding-top: 30px;
   padding-bottom: 30px;
-  font-size: 80px;
+  font-size: 100px;
   color: white;
 }
 
@@ -44,6 +44,7 @@
   font-size: 50px;
   text-decoration: none;
   text-align: center;
+  
 }
 .menuBtn:hover {
   background-color: rgb(107, 107, 189);
@@ -68,7 +69,7 @@
 }
 
 .icon {
-  width: 10vw;
+  width: 8vw;
 
 }
 .icon:hover {
@@ -82,6 +83,12 @@
   align-items: center;
 }
 
+.result{
+  color: white;
+  font-size: 55px;
+  text-align: center;
+}
+
 .GoBtn {
   width: 90%;
   height: 25vh !important;
@@ -91,6 +98,9 @@
   font-size: 90px;
   text-decoration: none;
   text-align: center;
+  font-family: 'Inria Sans', sans-serif;
+  
+
 }
 .GoBtn:hover {
   background-color: rgb(107, 107, 189);
@@ -105,13 +115,14 @@
   font-size: 35px;
   text-decoration: none;
   text-align: center;
+  font-family: 'Inria Sans', sans-serif;
 }
 .gameBtn:hover {
   background-color: rgb(107, 107, 189);
 }
 
 .goTopSpacer {
-  height: 30%;
+  height: 15%;
 }
 .goMidSpacer {
   height: 15%;

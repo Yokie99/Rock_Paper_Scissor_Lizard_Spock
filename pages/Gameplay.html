@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amaranth&family=Fugaz+One&family=Inria+Sans&family=Source+Sans+3&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="gameBG">
@@ -17,8 +23,12 @@
 
     <div class="row m-0">
         <div class="col scores text-center p-0">
-            <h2>Player 1</h2>
-            <h2>Score 0/0</h2>
+            <h2 id="player1">Player 1</h2>
+
+            <h2 id="p1Score">Score 0/0</h2>
+
+            <div class="goTopSpacer"></div>
+            <h2 id="p1Point">POINT </h2>
 
         </div>
         <div class="col iconContainer">
@@ -33,13 +43,14 @@
         </div>
         <div class="col-4 ">
             <div class="goTopSpacer"></div>
+            <h1 id="result" class="result">lizard beats paper hiuibi! </h1>
             <div class="d-flex justify-content-center pb-5">
 
                 <button id="goBtn" class="GoBtn " role="button">Go!</button>
             </div>
             <div class="goMidSpacer"></div>
             <div class="d-flex justify-content-between px-4 pt-5">
-                <a id="gameplayHomeBtn" href="../index.html" class="gameBtn " role="button">Home</a>
+                <button id="homeBtn" href="../index.html" class="gameBtn " role="button">Home</button>
                 <button id="gameplayRulesBtn" class="gameBtn " role="button">Rules</button>
             </div>
 
@@ -57,11 +68,15 @@
 
         </div>
         <div class="col scores text-center p-0">
-            <h2>Player 2</h2>
-            <h2>Score 0/0</h2>
+            <h2 id="player2">Player 2</h2>
+            <h2 id="p2Score">Score 0/0</h2>
+
+            <div class="goTopSpacer"></div>
+            <h2 id="p2Point">POINT </h2>
 
         </div>
     </div>
+
 
 
 
