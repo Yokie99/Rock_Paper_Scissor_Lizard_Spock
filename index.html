@@ -16,7 +16,50 @@
 </head>
 
 <body id="body" class="homeBG">
+    <!--Rules Modal -->
+    <div class="modal fade modal-lg" id="RuleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 rules" id="exampleModalLabel">Da Rules:</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body rules">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <p>Scissors cuts paper. </p>
+                                <p>Scissors decapitates lizard.</p>
+                                <p>Rock crushes lizard.</p>
+                                <p>Rock crushes scissors.</p>
+                                <p>Paper covers rock.</p>
+                                <p>Paper disproves Spock.</p>
+                                <p>Lizard poisons Spock.</p>
+                                <p>Lizard eats paper.</p>
+                                <p>Spock smashes scissors.</p>
+                                <p>Spock vaporizes rock.</p>
 
+                            </div>
+                            <div class="col">
+
+                                <img style="object-fit: scale-down;width: 100%; height: 100%;"
+                                    src="./assets/Rules_Chart.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="modal-footer rules">
+                    <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start -->
     <h1 class="text-center header">Rock, Paper, Scissor, Lizard, Spock</h1>
 
 
@@ -35,55 +78,7 @@
                 data-bs-target="#RuleModal">Rules</button>
         </div>
 
-        <!-- Modal -->
-        <div class="modal fade modal-lg" id="RuleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5 rules" id="exampleModalLabel">Da Rules:</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body rules">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <p>Scissors cuts paper. </p>
-                                    <p>Scissors decapitates lizard.</p>
-                                    <p>Rock crushes lizard.</p>
-                                    <p>Rock crushes scissors.</p>
-                                    <p>Paper covers rock.</p>
-                                    <p>Paper disproves Spock.</p>
-                                    <p>Lizard poisons Spock.</p>
-                                    <p>Lizard eats paper.</p>
-                                    <p>Spock smashes scissors.</p>
-                                    <p>Spock vaporizes rock.</p>
 
-                                </div>
-                                <div class="col">
-
-                                    tg35g35g3g35g34g3
-                                </div>
-                            </div>
-
-                        </div>
-
-
-
-
-
-
-
-
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
     </div>
@@ -129,15 +124,20 @@
             </div>
             <div class="col-4 ">
                 <div class="goTopSpacer"></div>
-                <h1 id="result" class="result"> </h1>
+                <p id="result" class="result"> &nbsp</p>
+
                 <div class="d-flex justify-content-center pb-5">
 
                     <button id="goBtn" class="GoBtn " role="button">Go!</button>
                 </div>
+
+                <p style="color: yellow;" id="result2" class="result"> </p>
+
                 <div class="goMidSpacer"></div>
                 <div class="d-flex justify-content-between px-4 pt-5">
                     <button id="homeBtn" href="../index.html" class="gameBtn " role="button">Home</button>
-                    <button id="gameplayRulesBtn" class="gameBtn " role="button">Rules</button>
+                    <button id="gameplayRulesBtn" class="gameBtn " role="button" data-bs-toggle="modal"
+                        data-bs-target="#RuleModal">Rules</button>
                 </div>
 
 
@@ -146,12 +146,13 @@
 
             </div>
             <div class="col iconContainer">
-                <img id="rockP2" class="icon" src="../assets/rock.png" alt="">
-                <img id="paperP2" class="icon" src="../assets/paper.png" alt="">
-                <img id="scissorsP2" class="icon" src="../assets/scissors.png" alt="">
-                <img id="lizardP2" class="icon" src="../assets/lizard.png" alt="">
-                <img id="spockP2" class="icon" src="../assets/spock.png" alt="">
-
+                <div id="p2Column">
+                    <img id="rockP2" class="icon" src="../assets/rock.png" alt="">
+                    <img id="paperP2" class="icon" src="../assets/paper.png" alt="">
+                    <img id="scissorsP2" class="icon" src="../assets/scissors.png" alt="">
+                    <img id="lizardP2" class="icon" src="../assets/lizard.png" alt="">
+                    <img id="spockP2" class="icon" src="../assets/spock.png" alt="">
+                </div>
             </div>
             <div class="col scores text-center p-0">
                 <p id="player2">Player 2</p>
