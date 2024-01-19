@@ -66,6 +66,7 @@
 
 .scores {
   color: white;
+  font-size: 55px;
 }
 
 .icon {
@@ -136,9 +137,9 @@
     display: none !important;
 }
 
-.glow {
+.glowPink {
     color: #fff;
-    animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 0.5s ease-in-out infinite alternate;
   }
   
   @-webkit-keyframes glow {
@@ -149,4 +150,35 @@
     to {
       text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
+}
+
+.glowRed {
+  color: #fff;
+  animation: glowRed 0.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glowRed {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ed0000, 0 0 40px #ed0000, 0 0 50px #ed0000, 0 0 60px #ed0000, 0 0 70px #ed0000;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4646, 0 0 40px #ff4646, 0 0 50px #ff4646, 0 0 60px #ff4646, 0 0 70px #ff4646, 0 0 80px #ff4646;
+  }
+}
+
+
+.glowGreen {
+  color: #fff;
+  animation: glowGreen 0.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glowGreen {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #17e600, 0 0 40px #17e600, 0 0 50px #17e600, 0 0 60px #17e600, 0 0 70px #17e600;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #6be598, 0 0 40px #6be598, 0 0 50px #6be598, 0 0 60px #6be598, 0 0 70px #6be598, 0 0 80px #6be598;
+  }
 }
