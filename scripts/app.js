@@ -99,6 +99,9 @@ function resetGame() {
 
     player2.classList = "";
     p2Status.classList = "";
+
+    player2.textContent = "Player 2"
+    p2Column.classList.remove("off");
 }
 
 
@@ -482,13 +485,13 @@ function checkWin() {
 function checkEnd() {
     if (p1Points === rounds) {
         p1Status.innerText = "Player 1 Wins!";
-        p2Status.innerText = "Player 2 Loses!";
+        p2Status.innerText = player2.textContent + " Loses!";
         goBtn.classList.add("off");
         result2.innerText = "Game Over, click home to replay"
     }
     else if (p2Points === rounds) {
         p1Status.innerText = "Player 1 Loses!";
-        p2Status.innerText = "Player 2 Wins!";
+        p2Status.innerText = player2.textContent + " Wins!";
         goBtn.classList.add("off");
         result2.innerText = "Game Over, click home to replay"
     }
