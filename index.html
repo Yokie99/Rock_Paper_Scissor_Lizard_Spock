@@ -29,16 +29,16 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-6">
-                                <p>Scissors cuts paper. </p>
-                                <p>Scissors decapitates lizard.</p>
-                                <p>Rock crushes lizard.</p>
-                                <p>Rock crushes scissors.</p>
-                                <p>Paper covers rock.</p>
+                                <p>Scissors cuts Paper. </p>
+                                <p>Scissors decapitates Lizard.</p>
+                                <p>Rock crushes Lizard.</p>
+                                <p>Rock crushes Scissors.</p>
+                                <p>Paper covers Rock.</p>
                                 <p>Paper disproves Spock.</p>
                                 <p>Lizard poisons Spock.</p>
-                                <p>Lizard eats paper.</p>
-                                <p>Spock smashes scissors.</p>
-                                <p>Spock vaporizes rock.</p>
+                                <p>Lizard eats Paper.</p>
+                                <p>Spock smashes Scissors.</p>
+                                <p>Spock vaporizes Rock.</p>
 
                             </div>
                             <div class="col">
@@ -83,18 +83,28 @@
 
     </div>
 
-    <div id="roundsDiv" class="off">
-        <div class="roundSpacer"></div>
+    <div id="roundsDiv" class="off row m-0">
+        <!-- <div class="roundSpacer"></div> -->
 
+        <div class="menuSpacer"></div>
+        <div class="col p-0 d-flex justify-content-center">
+            <button id="BoOne" class="menuBtn " href="../pages/Gameplay.html" role="button">Best of 1</button>
 
-        <div class="iconContainer">
+        </div>
+        <div class="col p-0 d-flex justify-content-center">
+            <button id="BoFive" class="menuBtn" href="../pages/Gameplay.html" role="button">Best of 5</button>
+        </div>
+        <div class="col p-0 d-flex justify-content-center">
+            <button id="BoSeven" class="menuBtn" href="../pages/Gameplay.html" role="button">Best of 7</button>
+        </div>
+        <!-- <div class="iconContainer">
             <button id="BoOne" class="menuBtn " href="../pages/Gameplay.html" role="button">Best of 1</button>
             <div class="roundRows"></div>
             <button id="BoFive" class="menuBtn" href="../pages/Gameplay.html" role="button">Best of 5</button>
             <div class="roundRows"></div>
             <button id="BoSeven" class="menuBtn" href="../pages/Gameplay.html" role="button">Best of 7</button>
             <div class="roundRows"></div>
-        </div>
+        </div> -->
 
 
     </div>
@@ -130,8 +140,10 @@
 
                     <button id="goBtn" class="GoBtn " role="button">Go!</button>
                 </div>
-
-                <p style="color: yellow;" id="result2" class="result"> </p>
+                <div class="d-flex justify-content-center pb-5">
+                    <button id="result2" class="replayBtn off" role="button">Replay?</button>
+                </div>
+                
 
                 <div class="goMidSpacer"></div>
                 <div class="d-flex justify-content-between px-4 pt-5">
@@ -146,7 +158,7 @@
 
             </div>
             <div class="col iconContainer">
-                <div id="p2Column">
+                <div id="p2Column" class="iconContainer">
                     <img id="rockP2" class="icon" src="../assets/rock.png" alt="">
                     <img id="paperP2" class="icon" src="../assets/paper.png" alt="">
                     <img id="scissorsP2" class="icon" src="../assets/scissors.png" alt="">

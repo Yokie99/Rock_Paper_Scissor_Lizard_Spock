@@ -29,12 +29,12 @@
 .header {
   padding-top: 30px;
   padding-bottom: 30px;
-  font-size: 100px;
+  font-size: 90px;
   color: white;
 }
 
 .menuSpacer {
-  height: 50vh;
+  height: 43vh;
 }
 
 .menuBtn {
@@ -73,7 +73,7 @@
 }
 
 .icon {
-  width: 8vw;
+  height: 15vh;
 
 }
 .icon:hover {
@@ -103,11 +103,23 @@
   text-decoration: none;
   text-align: center;
   font-family: 'Inria Sans', sans-serif;
-  
-
 }
 .GoBtn:hover {
   background-color: rgb(107, 107, 189);
+}
+.replayBtn {
+  width: 90%;
+  height: 25vh !important;
+  background-color: black;
+  color: red;
+  border-radius: 80px;
+  font-size: 90px;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Inria Sans', sans-serif;
+}
+.replayBtn:hover {
+  background-color: rgb(255, 255, 255);
 }
 
 .gameBtn {

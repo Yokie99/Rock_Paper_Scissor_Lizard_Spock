@@ -88,7 +88,6 @@ function resetGame() {
     p1Status.innerText = '';
     p2Status.innerText = '';
     result.textContent = "  ";
-    result2.textContent = "  ";
     goBtn.classList.remove("off");
     p1Points = 0;
     p2Points = 0;
@@ -102,6 +101,33 @@ function resetGame() {
 
     player2.textContent = "Player 2"
     p2Column.classList.remove("off");
+}
+function resetReplay() {
+    p1Choice = "";
+    p2Choice = "";
+    p1Status.innerText = '';
+    p2Status.innerText = '';
+    result.textContent = "  ";
+    goBtn.classList.remove("off");
+    p1Points = 0;
+    p2Points = 0;
+
+
+    player1.classList = "";
+    p1Status.classList = "";
+
+    player2.classList = "";
+    p2Status.classList = "";
+    p1Score.innerText = (`Score 0/${rounds}`);
+    p2Score.innerText = (`Score 0/${rounds}`);
+
+    player2.textContent = "Player 2"
+    if(players === 1){
+      p2Column.classList.add("off");  
+      startCPU();
+    }
+
+    
 }
 
 
@@ -121,21 +147,21 @@ BoOne.addEventListener("click", () => {
     rounds = 1;
     p1Score.innerText = (`Score 0/${rounds}`);
     p2Score.innerText = (`Score 0/${rounds}`);
-    
+    replay();
     showGameplay();
 });
 BoFive.addEventListener("click", () => {
     rounds = 3;
     p1Score.innerText = (`Score 0/${rounds}`);
     p2Score.innerText = (`Score 0/${rounds}`);
-    
+    replay();
     showGameplay();
 });
 BoSeven.addEventListener("click", () => {
     rounds = 4;
     p1Score.innerText = (`Score 0/${rounds}`);
     p2Score.innerText = (`Score 0/${rounds}`);
-    
+    replay();
     showGameplay();
 });
 
@@ -171,11 +197,15 @@ goBtn.addEventListener("click", () => {
         checkWin();
         p1Choice = "";
         p2Choice = "";
-    }
-    if(players === 1){
+        if(players === 1){
         startCPU();
     }
+    }
+    
     checkEnd();
+});
+result2.addEventListener("click", () => {
+    replay();
 });
 
 //Functions
@@ -487,12 +517,20 @@ function checkEnd() {
         p1Status.innerText = "Player 1 Wins!";
         p2Status.innerText = player2.textContent + " Loses!";
         goBtn.classList.add("off");
-        result2.innerText = "Game Over, click home to replay"
+        result2.classList.remove("off");
     }
     else if (p2Points === rounds) {
         p1Status.innerText = "Player 1 Loses!";
         p2Status.innerText = player2.textContent + " Wins!";
         goBtn.classList.add("off");
-        result2.innerText = "Game Over, click home to replay"
+        result2.classList.remove("off");
     }
 }
+
+function replay(){
+    result2.classList.add("off");
+    resetReplay();
+
+}
+
+
