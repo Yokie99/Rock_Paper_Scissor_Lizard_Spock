@@ -31,29 +31,62 @@
             <button id="cpuBtn" class="menuBtn" href="./pages/Rounds.html" role="button">VS CPU</button>
         </div>
         <div class="col p-0 d-flex justify-content-center">
-            <button id="rulesBtn" class="menuBtn" href="./pages/Rounds.html" role="button">Rules</button>
+            <button id="rulesBtn" class="menuBtn" href="./pages/Rounds.html" role="button" data-bs-toggle="modal"
+                data-bs-target="#RuleModal">Rules</button>
         </div>
 
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-  
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
+        <!-- Modal -->
+        <div class="modal fade modal-lg" id="RuleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 rules" id="exampleModalLabel">Da Rules:</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body rules">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <p>Scissors cuts paper. </p>
+                                    <p>Scissors decapitates lizard.</p>
+                                    <p>Rock crushes lizard.</p>
+                                    <p>Rock crushes scissors.</p>
+                                    <p>Paper covers rock.</p>
+                                    <p>Paper disproves Spock.</p>
+                                    <p>Lizard poisons Spock.</p>
+                                    <p>Lizard eats paper.</p>
+                                    <p>Spock smashes scissors.</p>
+                                    <p>Spock vaporizes rock.</p>
+
+                                </div>
+                                <div class="col">
+
+                                    tg35g35g3g35g34g3
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-  
+
+
     </div>
-  </div>
 
     <div id="roundsDiv" class="off">
         <div class="roundSpacer"></div>

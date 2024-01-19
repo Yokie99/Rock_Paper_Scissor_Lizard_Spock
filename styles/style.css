@@ -7,7 +7,6 @@
   background-image: url(../assets/space_Lizard2.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  /* width: 100vw; */
   height: 100vh;
   font-family: Jeju;
 }
@@ -22,6 +21,9 @@
   
 }
 
+.rules{
+  font-family: 'Inria Sans', sans-serif;
+}
 
 .header {
   padding-top: 30px;
